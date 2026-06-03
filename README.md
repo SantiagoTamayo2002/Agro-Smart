@@ -1,5 +1,6 @@
 
 # Agro-Smart
+<<<<<<< HEAD
 Proyecto multidiciplinario para gestión de sistema de riego automático para aportar a zonas de escasos recursos hídricos
 
 # Instrucciones
@@ -18,3 +19,6 @@ ingresar a la carpeta "frontend/app/" y escribir
 npm i
 npm run dev
 
+=======
+Proyecto multidisciplinario para gestión de sistema de riego automático para aportar a zonas de escasos recursos hídricos.
+>>>>>>> origin/main
