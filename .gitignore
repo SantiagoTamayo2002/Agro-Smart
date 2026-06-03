@@ -1,4 +1,7 @@
-
-# .gitignore
-# Ignore node_modules
-*/node_modules/
+node_modules/
+.env
+*.log
+dist/
+mqtt/certs/
+mqtt/config/passwd
+mqtt/config/mosquitto.db
