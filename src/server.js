@@ -5,8 +5,11 @@ import { iniciarMqtt, cerrarMqtt } from './mqtt/client.js';
 
 const app = createApp();
 
-const server = app.listen(env.port, () => {
-  console.log(`AgroSmart API escuchando en http://localhost:${env.port}`);
+// Prioriza el PORT de Azure (8080), si no existe usa el configurado en tu env local (4000)
+const PORT = process.env.PORT || env.port;
+
+const server = app.listen(PORT, () => {
+  console.log(`AgroSmart API escuchando en el puerto: ${PORT}`);
   console.log(`Entorno: ${env.nodeEnv}`);
 });
 
